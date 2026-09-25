@@ -373,6 +373,10 @@
     document.querySelectorAll("[placeholder]").forEach(function (el) {
       traducirAtributo(el, "placeholder", dict);
     });
+    // Los enlaces a la plataforma llevan al área en el idioma que se está leyendo
+    document.querySelectorAll('a[href*="conferences.portalintracom.com"]').forEach(function (a) {
+      a.href = a.href.replace(/\/(es|en|pt)\/c\//, "/" + lang + "/c/");
+    });
     document.documentElement.setAttribute("lang", lang);
     if (TITLES[lang]) document.title = TITLES[lang];
     document.querySelectorAll("[data-i18n-switch] button").forEach(function (b) {
