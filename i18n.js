@@ -333,29 +333,34 @@
 
   /** Texto original en español de cada nodo, para poder volver atrás o cambiar de idioma. */
   var ORIG = new WeakMap();
+  /** Último texto que dejó este script en cada nodo: si el diseño lo cambia después
+      (p. ej. al pasar del Comité Científico al Técnico), ese texto nuevo es el nuevo original. */
+  var ESCRITO = new WeakMap();
 
   function traducirNodo(nodo, dict) {
     var base = ORIG.get(nodo);
-    if (base === undefined) {
+    if (base === undefined || nodo.textContent !== ESCRITO.get(nodo)) {
       base = nodo.textContent;
       ORIG.set(nodo, base);
     }
     var clave = base.trim();
-    if (!clave) return;
-    var t = dict ? dict[clave] : null;
+    var t = clave && dict ? dict[clave] : null;
     var nuevo = t ? base.replace(clave, t) : base;
     if (nodo.textContent !== nuevo) nodo.textContent = nuevo;
+    ESCRITO.set(nodo, nuevo);
   }
 
   function traducirAtributo(el, attr, dict) {
     var clave = el.getAttribute("data-es-" + attr);
-    if (clave === null) {
-      clave = el.getAttribute(attr) || "";
+    var actual = el.getAttribute(attr) || "";
+    if (clave === null || actual !== el.getAttribute("data-i18n-" + attr)) {
+      clave = actual;
       el.setAttribute("data-es-" + attr, clave);
     }
-    if (!clave.trim()) return;
-    var t = dict ? dict[clave.trim()] : null;
-    el.setAttribute(attr, t || clave);
+    var t = clave.trim() && dict ? dict[clave.trim()] : null;
+    var nuevo = t || clave;
+    if (actual !== nuevo) el.setAttribute(attr, nuevo);
+    el.setAttribute("data-i18n-" + attr, nuevo);
   }
 
   var aplicando = false;
