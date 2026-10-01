@@ -14,6 +14,20 @@
 
   var DICT = {
     en: {
+      // Ponencias destacadas
+      "Ponentes": "Speakers",
+      "Programa científico": "Scientific programme",
+      "Ponencias destacadas": "Featured talks",
+      "Referentes internacionales en nutrición, comunicación y salud comparten su conocimiento en ICOM-Health&FOOD.": "Leading international experts in nutrition, communication and health share their knowledge at ICOM-Health&FOOD.",
+      "Por confirmar": "To be confirmed",
+      "Ver perfil": "View profile",
+      "Ciencia para la toma de decisiones: el papel del Comité Científico de la AESAN en la construcción de un entorno alimentario saludable": "Science for decision-making: the role of the AESAN Scientific Committee in building a healthy food environment",
+      "Modelos de etiquetado alimentario a nivel internacional: evidencia y experiencias sobre la ciudadanía": "International food labelling models: evidence and experiences among citizens",
+      "La importancia de la transferencia y comunicación de los resultados de la investigación en nutrición para una sociedad saludable": "The importance of transferring and communicating nutrition research findings for a healthy society",
+      "Importancia del desarrollo de proyectos de ciencia ciudadana en el ámbito de las ciencias de la alimentación": "The importance of developing citizen science projects in the food sciences",
+      "Marco regulatorio y publicitario de las alegaciones de salud en el sector oleícola: una perspectiva comparada nacional e internacional": "Regulatory and advertising framework for health claims in the olive oil sector: a comparative national and international perspective",
+      "Divulgación científica en el ámbito de la nutrición": "Science communication in nutrition",
+
       // Navegación y portada
       "El congreso": "The conference",
       "Líneas temáticas": "Thematic lines",
@@ -166,6 +180,20 @@
     },
 
     pt: {
+      // Ponencias destacadas
+      "Ponentes": "Palestrantes",
+      "Programa científico": "Programa científico",
+      "Ponencias destacadas": "Palestras em destaque",
+      "Referentes internacionales en nutrición, comunicación y salud comparten su conocimiento en ICOM-Health&FOOD.": "Referências internacionais em nutrição, comunicação e saúde compartilham seu conhecimento no ICOM-Health&FOOD.",
+      "Por confirmar": "A confirmar",
+      "Ver perfil": "Ver perfil",
+      "Ciencia para la toma de decisiones: el papel del Comité Científico de la AESAN en la construcción de un entorno alimentario saludable": "Ciência para a tomada de decisões: o papel do Comitê Científico da AESAN na construção de um ambiente alimentar saudável",
+      "Modelos de etiquetado alimentario a nivel internacional: evidencia y experiencias sobre la ciudadanía": "Modelos de rotulagem alimentar a nível internacional: evidência e experiências com a população",
+      "La importancia de la transferencia y comunicación de los resultados de la investigación en nutrición para una sociedad saludable": "A importância da transferência e comunicação dos resultados da pesquisa em nutrição para uma sociedade saudável",
+      "Importancia del desarrollo de proyectos de ciencia ciudadana en el ámbito de las ciencias de la alimentación": "A importância do desenvolvimento de projetos de ciência cidadã no âmbito das ciências da alimentação",
+      "Marco regulatorio y publicitario de las alegaciones de salud en el sector oleícola: una perspectiva comparada nacional e internacional": "Enquadramento regulamentar e publicitário das alegações de saúde no setor oleícola: uma perspectiva comparada nacional e internacional",
+      "Divulgación científica en el ámbito de la nutrición": "Divulgação científica no âmbito da nutrição",
+
       // Navegação e capa
       "El congreso": "O congresso",
       "Líneas temáticas": "Linhas temáticas",
